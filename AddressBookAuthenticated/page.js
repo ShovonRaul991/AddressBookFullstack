@@ -9,7 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 var _a, _b, _c;
 import { Person } from './Person.js';
-import { extructData, selectDetail, saveDetail, updateDetail, deleteDetail, registration, login } from './Services.js';
+import { CRUD } from './Services.js';
+import { LoginService } from './LoginServices.js';
+import { Helper } from './Helper.js';
+let crudObj = new CRUD();
+let sessionObj = new LoginService();
+let helperObj = new Helper();
 let addressDetails = document.getElementById('ViewDetails');
 let addresslist = document.getElementById('ContactListItems');
 let inputForm = document.getElementById('InputForm');
@@ -26,22 +31,13 @@ let entryWebsite = document.getElementById('WebsiteEntry');
 let entryAddress = document.getElementById('AddressEntry');
 let entryUserName = document.getElementById('UserNameEntry');
 let entryPassword = document.getElementById('UserPasswordEntry');
-let requiredName = document.getElementById('RequiredName');
-let requiredEmail = document.getElementById('RequiredEmail');
-let requiredMobile = document.getElementById('RequiredMobile');
-let requiredLandline = document.getElementById('RequiredLandline');
-let requiredSite = document.getElementById('RequiredSite');
-let requiredAddress = document.getElementById('RequiredAddress');
-let requiredUserName = document.getElementById('RequiredUserName');
-let requiredPassword = document.getElementById('RequiredPassword');
 let selectedContact;
-let validName = false, validEmail = false, validMobile = false, validLandline = false, validSite = false, validAddress = false, validUserName = false, validPassword = false;
 var globaltoken = "Nothing";
 var selectedData = new Person("", "", 0, 0, "", "");
 var loggedUser = "";
 function dataLoad(token) {
     return __awaiter(this, void 0, void 0, function* () {
-        yield extructData(token).then((objectData) => {
+        yield crudObj.extructData(token).then((objectData) => {
             let addressData = "";
             objectData.map((values) => {
                 //console.log(values)
@@ -60,9 +56,9 @@ function dataLoad(token) {
                         each.style.backgroundColor = 'white';
                     });
                     select.style.backgroundColor = "#CEE7F2";
-                    selectDetail(selectedContact, token).then((singleObjectData) => {
+                    crudObj.selectDetail(selectedContact, token).then((singleObjectData) => {
                         selectedData = new Person(singleObjectData.name, singleObjectData.email, singleObjectData.phone, singleObjectData.landline, singleObjectData.website, singleObjectData.addressDetails);
-                        showDetails(selectedData);
+                        helperObj.showDetails(selectedData);
                         inputForm.style.display = 'none';
                         addressDetails.style.display = 'block';
                         signForm.style.display = 'none';
@@ -86,7 +82,7 @@ function addingForm() {
     // (document.getElementById('Formid') as any).reset(); 
 }
 (_a = document.getElementById("AddAddress")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
-    if (globaltoken != "Nothing" && loggedUser == 'admin') {
+    if (globaltoken != "Nothing") {
         addingForm();
     }
     else {
@@ -103,7 +99,7 @@ addButton.addEventListener('click', function () {
     }
 });
 document.getElementById("IconEdit").addEventListener('click', function () {
-    if (globaltoken != "Nothing" && loggedUser == 'admin') {
+    if (globaltoken != "Nothing") {
         editingForm(selectedData);
     }
     else {
@@ -120,9 +116,9 @@ saveButton.addEventListener('click', function () {
     }
 });
 (_b = document.getElementById("IconDelete")) === null || _b === void 0 ? void 0 : _b.addEventListener('click', function () {
-    if (globaltoken != "Nothing" && loggedUser == 'admin') {
-        deleteDetail(globaltoken, selectedContact);
-        alert("Do yo want to delete the contact?");
+    if (globaltoken != "Nothing") {
+        crudObj.deleteDetail(globaltoken, selectedContact);
+        alert("Do yo want to delete the contact? Permission:Admin");
         dataLoad(globaltoken);
         addressDetails.style.display = 'none';
     }
@@ -140,14 +136,14 @@ saveButton.addEventListener('click', function () {
     }
 });
 function createContact() {
-    if (validName && validEmail && validMobile && validLandline && validSite && validAddress) {
+    if (helperObj.validName && helperObj.validEmail && helperObj.validMobile && helperObj.validLandline && helperObj.validSite && helperObj.validAddress) {
         let enteredName = entryName.value;
         let enteredEmail = entryEmail.value;
         let enterdedMobile = Number(entryMobile.value);
         let enteredLandline = Number((entryLandline).value);
         let enteredWebsite = entryWebsite.value;
         let enteredAddress = entryAddress.value;
-        saveDetail(globaltoken, enteredName, enteredEmail, enterdedMobile, enteredLandline, enteredWebsite, enteredAddress);
+        crudObj.saveDetail(globaltoken, enteredName, enteredEmail, enterdedMobile, enteredLandline, enteredWebsite, enteredAddress);
         alert("New contact is added");
         inputForm.style.display = 'none';
     }
@@ -176,8 +172,8 @@ function updateContact() {
     let enteredLandline = Number((entryLandline).value);
     let enteredWebsite = entryWebsite.value;
     let enteredAddress = entryAddress.value;
-    updateDetail(globaltoken, enteredID, enteredName, enteredEmail, enterdedMobile, enteredLandline, enteredWebsite, enteredAddress);
-    alert("Do you want to update the contact?");
+    crudObj.updateDetail(globaltoken, enteredID, enteredName, enteredEmail, enterdedMobile, enteredLandline, enteredWebsite, enteredAddress);
+    alert("Do you want to update the contact? Permission:Admin");
     dataLoad(globaltoken);
     addressDetails.style.display = 'none';
     inputForm.style.display = 'none';
@@ -187,7 +183,7 @@ function authenticate() {
         return __awaiter(this, void 0, void 0, function* () {
             let username = entryUserName.value;
             let password = entryPassword.value;
-            let registerToken = yield registration(username, password).then(data => { return data.message; });
+            let registerToken = yield sessionObj.registration(username, password).then(data => { return data.message; });
             if (registerToken == "user already present") {
                 alert(registerToken);
             }
@@ -202,7 +198,7 @@ function authenticate() {
         return __awaiter(this, void 0, void 0, function* () {
             let username = entryUserName.value;
             let password = entryPassword.value;
-            let loginToken = yield login(username, password).then(data => { return data.token; });
+            let loginToken = yield sessionObj.login(username, password).then(data => { return data.token; });
             if (loginToken == "user not found" || loginToken == "password is incorrect") {
                 alert(loginToken);
             }
@@ -244,155 +240,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 entryName.addEventListener('input', function () {
-    nameValidate();
+    helperObj.nameValidate();
 });
 entryEmail.addEventListener('input', function () {
-    validateEmail();
+    helperObj.validateEmail();
 });
 entryMobile.addEventListener('input', function () {
-    validateMobile();
+    helperObj.validateMobile();
 });
 entryLandline.addEventListener('input', function () {
-    validateLandline();
+    helperObj.validateLandline();
 });
 entryWebsite.addEventListener('input', function () {
-    validateWebsite();
+    helperObj.validateWebsite();
 });
 entryAddress.addEventListener('input', function () {
-    validateAddress();
+    helperObj.validateAddress();
 });
 entryUserName.addEventListener('input', function () {
-    validateUserName();
+    helperObj.validateUserName();
 });
 entryPassword.addEventListener('input', function () {
-    validatePassword();
+    helperObj.validatePassword();
 });
-/* form validation */
-function nameValidate() {
-    validName = false;
-    let tempName = entryName.value;
-    if (tempName.length == 0) {
-        requiredName.innerHTML = 'Name is required';
-    }
-    else if (tempName.length > 0) {
-        requiredName.innerHTML = '';
-        validName = true;
-    }
-}
-function validateEmail() {
-    validEmail = false;
-    let tempEmail = entryEmail.value;
-    if (tempEmail.length === 0) {
-        requiredEmail.innerHTML = 'Email is required';
-    }
-    else if (tempEmail.length > 0) {
-        let valideMail = /^[0-9a-z.\s+_]+@[0-9a-z-.+]+\.[a-z]{2,4}$/;
-        if (tempEmail.match(valideMail)) {
-            requiredEmail.innerHTML = '';
-            validEmail = true;
-        }
-        else {
-            requiredEmail.innerHTML = 'Email is incorrect';
-        }
-    }
-}
-function validateMobile() {
-    validMobile = false;
-    let tempMobile = entryMobile.value;
-    if (tempMobile.length == 0) {
-        requiredMobile.innerHTML = 'Mobile is required';
-    }
-    else if (tempMobile.length != 10 || (Number(tempMobile) % 1) != 0) {
-        requiredMobile.innerHTML = 'Mobile is incorrect';
-    }
-    else {
-        requiredMobile.innerHTML = '';
-        validMobile = true;
-    }
-}
-function validateLandline() {
-    validLandline = false;
-    let tempLandline = entryLandline.value;
-    if (tempLandline.length == 0) {
-        requiredLandline.innerHTML = 'Landline is required';
-    }
-    else if (tempLandline.length != 10 || (Number(tempLandline) % 1) != 0) {
-        requiredLandline.innerHTML = 'Landline is incorrect';
-    }
-    else {
-        requiredLandline.innerHTML = '';
-        validLandline = true;
-    }
-}
-function validateWebsite() {
-    validSite = false;
-    let tempSite = entryWebsite.value;
-    if (tempSite.length == 0) {
-        requiredSite.innerHTML = 'Website is required';
-    }
-    else if (tempSite.length > 0) {
-        requiredSite.innerHTML = '';
-        validSite = true;
-    }
-}
-function validateAddress() {
-    validAddress = false;
-    let tempAddress = entryAddress.value;
-    if (tempAddress.length == 0) {
-        requiredAddress.innerHTML = 'Address is required';
-    }
-    else if (tempAddress.length > 0) {
-        requiredAddress.innerHTML = '';
-        validAddress = true;
-    }
-}
-function validateUserName() {
-    validUserName = false;
-    let tempUserName = entryUserName.value;
-    if (tempUserName.length == 0) {
-        requiredUserName.innerHTML = 'username is required';
-    }
-    else if (tempUserName.length > 0) {
-        requiredUserName.innerHTML = '';
-        validUserName = true;
-    }
-}
-function validatePassword() {
-    validPassword = false;
-    let tempPassword = entryPassword.value;
-    if (tempPassword.length < 5) {
-        requiredPassword.innerHTML = 'password should be minimum 5 charracter';
-    }
-    else if (tempPassword.length > 0) {
-        requiredPassword.innerHTML = '';
-        validPassword = true;
-    }
-}
 function loginValidate() {
-    validateUserName();
-    validatePassword();
+    helperObj.validateUserName();
+    helperObj.validatePassword();
 }
 function formValidate() {
-    nameValidate();
-    validateEmail();
-    validateMobile();
-    validateLandline();
-    validateWebsite();
-    validateAddress();
-}
-function showDetails(obj) {
-    let _name = document.getElementById('PersonName');
-    _name.innerText = obj.name;
-    let _email = document.getElementById('DetailEmail');
-    _email.innerText = "Email: " + obj.email;
-    let _mobile = document.getElementById('DetailMobile');
-    _mobile.innerText = "Mobile: " + '+91 ' + obj.phone;
-    let _landline = document.getElementById('DetailLandline');
-    _landline.innerText = "Landline: " + obj.landline;
-    let _website = document.getElementById('DetailSite');
-    _website.innerText = "Website: " + 'https://' + obj.website;
-    let _address = document.getElementById('DetailAddress');
-    _address.innerText = "Address: " + obj.addressDetails;
+    helperObj.nameValidate();
+    helperObj.validateEmail();
+    helperObj.validateMobile();
+    helperObj.validateLandline();
+    helperObj.validateWebsite();
+    helperObj.validateAddress();
 }
 document.getElementById('Home').addEventListener('click', function () {
     let allAddress = addresslist.children;
@@ -404,27 +285,3 @@ document.getElementById('Home').addEventListener('click', function () {
     inputForm.style.display = 'none';
     signForm.style.display = 'none';
 });
-/*
-function goToHome(){
-    let allAddress : any = addresslist.children;
-    for(let i=0;i<allAddress.length;i++)
-        {
-            allAddress[i].style.backgroundColor = 'white';
-            allAddress[i].style.overflowX = 'hidden';
-        }
-    addressDetails.style.display= 'none';
-    inputForm.style.display = 'none';
-}
-*/
-/* Extra functions added lastly after the feedback */
-/*
-function makeScroll(element:any){
-    if(overflow(element)){
-        selectedContact.style.overflowX = "scroll"
-    }
-}
-
-function overflow(tempElement:any) {
-    return tempElement.scrollHeight > tempElement.clientHeight || tempElement.scrollWidth > tempElement.clientWidth;
-}
-*/ 

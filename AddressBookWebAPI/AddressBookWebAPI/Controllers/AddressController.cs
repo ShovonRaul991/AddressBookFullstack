@@ -41,7 +41,7 @@ namespace AddressBookWebAPI.Controllers
 
         [HttpPost]
         [Route("add")]
-        [Authorize(Roles ="Admin")]
+        [Authorize]
         public async Task<IActionResult> GetAddress(RetrieveAddress obj)
         {
             var insertAddress = @"Insert into Addresses (Name, email, phone,landline,website, AddressDetails) values (@Name, @email, @phone, @landline, @website, @AddressDetails)";

@@ -83,4 +83,36 @@ export class CRUD {
         });
         del();
     }
+    registration(enteredUsername, enteredPassword) {
+        return __awaiter(this, void 0, void 0, function* () {
+            var registerData = yield fetch("https://localhost:44309/api/Authentication/register", {
+                method: "POST",
+                body: JSON.stringify({
+                    username: enteredUsername,
+                    password: enteredPassword
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8",
+                }
+            }).then((Data) => { return Data.json(); });
+            return registerData;
+        });
+    }
+    login(enteredUsername, enteredPassword) {
+        return __awaiter(this, void 0, void 0, function* () {
+            var data = yield fetch("https://localhost:44309/api/Authentication/login", {
+                method: "POST",
+                body: JSON.stringify({
+                    username: enteredUsername,
+                    password: enteredPassword
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8",
+                }
+            }).then((Data) => { return Data.json(); });
+            //console.log("loaded")
+            //console.log(data);
+            return data;
+        });
+    }
 }

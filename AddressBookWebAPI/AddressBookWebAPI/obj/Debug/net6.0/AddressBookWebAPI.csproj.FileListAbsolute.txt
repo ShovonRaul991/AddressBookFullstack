@@ -1,0 +1,179 @@
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.exe
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.deps.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.runtimeconfig.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.pdb
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.AssemblyReference.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.AssemblyInfoInputs.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.AssemblyInfo.cs
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.AddressBookWebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\scopedcss\bundle\AddressBookWebAPI.styles.css
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.CopyComplete
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\refint\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.pdb
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.genruntimeconfig.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\ref\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.exe
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.deps.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.runtimeconfig.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.pdb
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.AssemblyReference.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.AssemblyInfoInputs.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.AssemblyInfo.cs
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.AddressBookWebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\scopedcss\bundle\AddressBookWebAPI.styles.css
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.CopyComplete
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\refint\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.pdb
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.genruntimeconfig.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\ref\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Dapper.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.AssemblyReference.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.AssemblyInfoInputs.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.AssemblyInfo.cs
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\refint\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.pdb
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.exe
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.deps.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.runtimeconfig.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\AddressBookWebAPI.pdb
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Dapper.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.AddressBookWebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AddressBookWebAPI.props
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\scopedcss\bundle\AddressBookWebAPI.styles.css
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.csproj.CopyComplete
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\AddressBookWebAPI.genruntimeconfig.cache
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\obj\Debug\net6.0\ref\AddressBookWebAPI.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Scrutor.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\shovon.r\Documents\InternshipTraining\AddressBook_TypeScript_&_API Focus Security\AddressBookWebAPI\AddressBookWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

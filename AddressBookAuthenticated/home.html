@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address Book</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="module" src="page.js" defer></script>
+    
+</head>
+
+<body>
+   <header class="page-header">
+       <h1 class="page-title">Address Book</h1>
+       <nav class="page-navigation">
+           <ul class="page-nav-items">
+               <li><a class="home" id="Home" >Home</a></li>
+               <li><a class="add-address" id="AddAddress" >+Add</a></li>  
+               <li><a class="login-user" id="LoginUser" >Login</a></li> 
+               <li><a class="register-user" id="RegisterUser" >Register</a></li>   
+            </ul>
+                <img src="Images\blog-icon.png" alt="Blog">
+       </nav>
+   </header>
+   <div class="page-form">
+       <div class="contact-list">
+            <div class="contact-list-header">
+                <h3>Contacts</h3>
+            </div>
+            <div class="contact-list-items" id="ContactListItems">
+
+            </div>
+       </div>
+       <div class="view-details" id="ViewDetails">
+            <div class="view-details-header">
+                    <div class="icon-edit" id="IconEdit"><img src="Images\edit1.jpg">Edit</div>
+                    <div class="icon-delete" id="IconDelete"><img src="Images\delete2.png" >Delete</div>
+            </div>
+            <div class="view-details-body" id="ViewDetailsBody">
+                <p id="PersonIDHidden" style="display: none;"></p>
+                <p id="PersonName" class="Person-Name"></p>
+                <div id='DetailEmail' class="detail-email"></div>
+                <div id="DetailMobile" class="detail-mobile"></div>
+                <div id="DetailLandline" class="detail-landline"></div>
+                <div id="DetailSite" class="detail-site"></div>
+
+                <div id="DetailAddress" class="detail-address"><span id="DetailAddressValue" class="detail-address-value"></span></div>
+                
+            </div>
+       </div>
+       <div class="input-form-hidden" id="InputForm">
+            <form class="form-input" id="Formid">
+                <div>
+                    <label for="NameEntry">Name <span id="RequiredName">*</span></label>
+                    <input id="NameEntry" type="text" maxlength="16" >
+                </div>
+                <div>
+                    <label for="EmailEntry">Email <span id="RequiredEmail">*</span></label>
+                    <input id="EmailEntry" type="text" >
+                </div>
+                <div class="mobile-landline">
+                    <div class="mobile-landline-label">
+                        <div>
+                            <label for="MobileEntry"  class="label" >
+                                Mobile
+                                <span id="RequiredMobile">*</span>
+                            </label>
+                            <input id="MobileEntry"  class="input" type="text" >
+    
+                        </div>
+                        <div>
+                            <label for="LandlineEntry" class="label">Landline<span id="RequiredLandline">*</span></label>
+
+                            <input id="LandlineEntry" class="input" type="text" name="" id="" >
+    
+                        </div>
+
+                    </div>
+                    <!-- <div class="mobile-landline-input">
+                                                <!-- <label for="LandlineEntry">Landline<span id="RequiredLandline">*</span></label> -->
+
+                                                    <!-- <input id="MobileEntry" type="text" onkeyup="validateMobile()" onkeydown="validateMobile()"> -->
+
+                        <!-- <label for="LandlineEntry" class="label">Landline<span id="RequiredLandline">*</span></label> -->
+
+                        <!-- <input id="MobileEntry" type="text" onkeyup="validateMobile()" onkeydown="validateMobile()"> -->
+                        <!-- <input id="LandlineEntry" class="input" type="text" name="" id="" onkeyup="validateLandline()" onkeydown="validateLandline()">
+                    </div> -->
+                </div>
+                <div>
+                    <label for="WebsiteEntry">Website<span id="RequiredSite">*</span></label>
+                <input id="WebsiteEntry" type="text" >
+                </div>
+                <div>
+                    <label for="AddressEntry">Address <span id="RequiredAddress">*</span></label>
+                    <input type="text" name="" id="AddressEntry" ></input>
+                </div>
+                
+            
+            <div class="submit-button">
+                <input type="button" name="Add" id="SubmitButton" value="Add" >
+                <input type="button" name="Edit" id="EditButton" value="Edit" >
+            </div>
+        </form>
+       </div>
+       <div class="login-input-form-hidden" id="Login">
+        <form class="form-input" id="LoginFormid">
+            <div>
+                <label for="UserNameEntry">UserName <span id="RequiredUserName">*</span></label>
+                <input id="UserNameEntry" type="text" maxlength="16" >
+            </div>
+            <div>
+                <label for="UserPasswordEntry">Password <span id="RequiredPassword">*</span></label>
+                <input id="UserPasswordEntry" type="password" >
+            </div>
+            <div class="login-button">
+                <input type="button" name="login" id="LoginButton" value="Login" >
+                <input type="button" name="Register" id="RegisterButton" value="Register" >
+            </div>
+        </form>
+       </div>
+       
+   </div>
+   <script> var exports = {}; </script>
+    
+</body>
+</html>

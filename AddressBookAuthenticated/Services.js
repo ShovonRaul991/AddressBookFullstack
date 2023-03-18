@@ -85,7 +85,7 @@ export function deleteDetail(token, personId) {
 }
 export function registration(enteredUsername, enteredPassword) {
     return __awaiter(this, void 0, void 0, function* () {
-        yield fetch("https://localhost:44309/api/Authentication/register", {
+        var registerData = yield fetch("https://localhost:44309/api/Authentication/register", {
             method: "POST",
             body: JSON.stringify({
                 username: enteredUsername,
@@ -94,7 +94,8 @@ export function registration(enteredUsername, enteredPassword) {
             headers: {
                 "Content-type": "application/json; charset=UTF-8",
             }
-        });
+        }).then((Data) => { return Data.json(); });
+        return registerData;
     });
 }
 export function login(enteredUsername, enteredPassword) {

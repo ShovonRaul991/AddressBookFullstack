@@ -30,7 +30,8 @@ let requiredPassword = (document.getElementById('RequiredPassword') as HTMLDivEl
 let selectedContact:any;
 let validName:boolean=false,validEmail:boolean=false,validMobile:boolean=false,validLandline:boolean=false,validSite:boolean=false,validAddress:boolean=false,validUserName:boolean=false,validPassword:boolean=false;
 var globaltoken = "Nothing"
-var userData = new Person("","",0,0,"","");
+var selectedData = new Person("","",0,0,"","");
+var loggedUser = ""
 
 async function dataLoad(token:any){
      await extructData(token).then((objectData)=>{
@@ -56,13 +57,13 @@ async function dataLoad(token:any){
                 (select as any).style.backgroundColor = "#CEE7F2"
                 
                 selectDetail(selectedContact,token).then((singleObjectData)=>{
-                   userData = new Person(singleObjectData.name,
+                   selectedData = new Person(singleObjectData.name,
                             singleObjectData.email,
                             singleObjectData.phone,
                             singleObjectData.landline,
                             singleObjectData.website,
                             singleObjectData.addressDetails);
-                    showDetails(userData);
+                    showDetails(selectedData);
                     inputForm.style.display = 'none';
                     addressDetails.style.display ='block';
                     signForm.style.display = 'none';
@@ -89,7 +90,7 @@ function addingForm(){
 }
 
 document.getElementById("AddAddress")?.addEventListener('click',function(){
-    if(globaltoken!="Nothing"){
+    if(globaltoken!="Nothing" && loggedUser=='admin'){
         addingForm()
     }
     else{
@@ -108,8 +109,8 @@ addButton.addEventListener('click',function(){
 });
 
 (document.getElementById("IconEdit") as HTMLDivElement).addEventListener('click',function(){
-    if(globaltoken!="Nothing"){
-        editingForm(userData)
+    if(globaltoken!="Nothing"  && loggedUser=='admin'){
+        editingForm(selectedData)
     }  
     else{
         alert("Access Denied")
@@ -127,13 +128,26 @@ saveButton.addEventListener('click',function(){
 })
 
 document.getElementById("IconDelete")?.addEventListener('click',function(){
-    if(globaltoken!="Nothing"){
+    if(globaltoken!="Nothing" && loggedUser=='admin'){
         deleteDetail(globaltoken,selectedContact);
         alert("Do yo want to delete the contact?")
         dataLoad(globaltoken);
         addressDetails.style.display ='none';
     }
+    else{
+        alert("Access Denied")
+        dataLoad(globaltoken);
+    }
     
+})
+
+document.getElementById("LogoutUser")?.addEventListener('click',function(){
+    if(globaltoken!="Nothing"){
+        document.location.reload()
+    }
+    else{
+        alert("User not logged in")
+    }
 })
 
 
@@ -186,11 +200,18 @@ function updateContact(){
 }
 
 function authenticate(){
-    RegisterButton.addEventListener('click',function(){
+    RegisterButton.addEventListener('click',async function(){
         let username = entryUserName.value;
         let password = entryPassword.value;
-        registration(username,password);
-        document.location.reload();
+        let registerToken =await registration(username,password).then(data=>{return data.message});
+        if(registerToken == "user already present"){
+            alert(registerToken)
+        }
+        else{
+            alert("User is created")
+            document.location.reload();
+        }
+        
     });
     loginButton.addEventListener('click',async function(){
         let username = entryUserName.value;
@@ -201,12 +222,17 @@ function authenticate(){
         }
         else{
             globaltoken = loginToken;
-            dataLoad(loginToken)
-            signForm.style.display = "none"
+            loggedUser = username;
+            (document.getElementById("LoginUser") as HTMLElement).innerHTML = "Hello "+ loggedUser;
+            dataLoad(loginToken);
+            signForm.style.display = "none";
+            document.getElementById("LoginUser")?.addEventListener('click',function(){
+                alert("First log out yourself");
+                signForm.style.display='none';
+            })
             
         }
     })
-
     
 }
 
@@ -222,6 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addressDetails.style.display = 'none';
         RegisterButton.style.display = 'none';
         loginButton.style.display = 'block';
+        loginValidate();
     });
     
     document.getElementById("RegisterUser")?.addEventListener('click',function(){
@@ -231,17 +258,11 @@ document.addEventListener('DOMContentLoaded', () => {
         addressDetails.style.display = 'none';
         loginButton.style.display = 'none';
         RegisterButton.style.display = 'block';
+        loginValidate();
     });
 
 
 });
-
-
-
-
-
-
-
 
 
 entryName.addEventListener('input',function(){

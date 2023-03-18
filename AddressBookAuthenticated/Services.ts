@@ -78,7 +78,7 @@ export function deleteDetail(token:any,personId:string){
 }
 
 export async function registration(enteredUsername:string,enteredPassword:string){
-    await fetch("https://localhost:44309/api/Authentication/register",{
+    var registerData = await fetch("https://localhost:44309/api/Authentication/register",{
         method: "POST",
         body: JSON.stringify({
             username:enteredUsername,
@@ -87,7 +87,8 @@ export async function registration(enteredUsername:string,enteredPassword:string
         headers:{
             "Content-type" : "application/json; charset=UTF-8",
         }
-    });
+    }).then((Data)=>{return Data.json()});
+    return registerData;
 }
 
 export async function login(enteredUsername:string,enteredPassword:string){

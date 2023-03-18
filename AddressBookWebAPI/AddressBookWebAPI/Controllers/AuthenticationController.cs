@@ -32,7 +32,7 @@ namespace AddressBookWebAPI.Controllers
             var searchUser = await connection.QueryAsync<User>(checkAvailable, new {User = _userRegistration.username});
             if (searchUser.Count() != 0)
             {
-                return Ok("User already present");
+                return Ok(new { message = "user already present" });
             }
 
             CreateHash(_userRegistration.password, out byte[] passwordHash, out byte[] passwordKey);
@@ -44,7 +44,7 @@ namespace AddressBookWebAPI.Controllers
             var insertAddress = @"Insert into Users (username, passwordHash, passwordKey) values (@username, @passwordHash, @passwordKey)";
             //using var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
             var addresult = await connection.QueryAsync<User>(insertAddress, user);
-            return Ok(value: user);
+            return Ok(new { message = User });
 
         }
 
@@ -57,7 +57,7 @@ namespace AddressBookWebAPI.Controllers
             var totalData = await connection.QueryAsync<User>(getParticularUser, new { UserName = userlogin.username });
             if (totalData.Count()==0)
             {
-                return Ok(new { token = "user not found" }); ;
+                return Ok(new { token = "user not found" });
             }
             
             if (!verifyLogin(userlogin.password, totalData.ToList()[0].passwordHash, totalData.ToList()[0].passwordKey))

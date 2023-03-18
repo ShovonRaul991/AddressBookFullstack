@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var _a, _b;
+var _a, _b, _c;
 import { Person } from './Person.js';
 import { extructData, selectDetail, saveDetail, updateDetail, deleteDetail, registration, login } from './Services.js';
 let addressDetails = document.getElementById('ViewDetails');
@@ -37,7 +37,8 @@ let requiredPassword = document.getElementById('RequiredPassword');
 let selectedContact;
 let validName = false, validEmail = false, validMobile = false, validLandline = false, validSite = false, validAddress = false, validUserName = false, validPassword = false;
 var globaltoken = "Nothing";
-var userData = new Person("", "", 0, 0, "", "");
+var selectedData = new Person("", "", 0, 0, "", "");
+var loggedUser = "";
 function dataLoad(token) {
     return __awaiter(this, void 0, void 0, function* () {
         yield extructData(token).then((objectData) => {
@@ -60,8 +61,8 @@ function dataLoad(token) {
                     });
                     select.style.backgroundColor = "#CEE7F2";
                     selectDetail(selectedContact, token).then((singleObjectData) => {
-                        userData = new Person(singleObjectData.name, singleObjectData.email, singleObjectData.phone, singleObjectData.landline, singleObjectData.website, singleObjectData.addressDetails);
-                        showDetails(userData);
+                        selectedData = new Person(singleObjectData.name, singleObjectData.email, singleObjectData.phone, singleObjectData.landline, singleObjectData.website, singleObjectData.addressDetails);
+                        showDetails(selectedData);
                         inputForm.style.display = 'none';
                         addressDetails.style.display = 'block';
                         signForm.style.display = 'none';
@@ -85,7 +86,7 @@ function addingForm() {
     // (document.getElementById('Formid') as any).reset(); 
 }
 (_a = document.getElementById("AddAddress")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
-    if (globaltoken != "Nothing") {
+    if (globaltoken != "Nothing" && loggedUser == 'admin') {
         addingForm();
     }
     else {
@@ -102,8 +103,8 @@ addButton.addEventListener('click', function () {
     }
 });
 document.getElementById("IconEdit").addEventListener('click', function () {
-    if (globaltoken != "Nothing") {
-        editingForm(userData);
+    if (globaltoken != "Nothing" && loggedUser == 'admin') {
+        editingForm(selectedData);
     }
     else {
         alert("Access Denied");
@@ -119,11 +120,23 @@ saveButton.addEventListener('click', function () {
     }
 });
 (_b = document.getElementById("IconDelete")) === null || _b === void 0 ? void 0 : _b.addEventListener('click', function () {
-    if (globaltoken != "Nothing") {
+    if (globaltoken != "Nothing" && loggedUser == 'admin') {
         deleteDetail(globaltoken, selectedContact);
         alert("Do yo want to delete the contact?");
         dataLoad(globaltoken);
         addressDetails.style.display = 'none';
+    }
+    else {
+        alert("Access Denied");
+        dataLoad(globaltoken);
+    }
+});
+(_c = document.getElementById("LogoutUser")) === null || _c === void 0 ? void 0 : _c.addEventListener('click', function () {
+    if (globaltoken != "Nothing") {
+        document.location.reload();
+    }
+    else {
+        alert("User not logged in");
     }
 });
 function createContact() {
@@ -171,12 +184,21 @@ function updateContact() {
 }
 function authenticate() {
     RegisterButton.addEventListener('click', function () {
-        let username = entryUserName.value;
-        let password = entryPassword.value;
-        registration(username, password);
-        document.location.reload();
+        return __awaiter(this, void 0, void 0, function* () {
+            let username = entryUserName.value;
+            let password = entryPassword.value;
+            let registerToken = yield registration(username, password).then(data => { return data.message; });
+            if (registerToken == "user already present") {
+                alert(registerToken);
+            }
+            else {
+                alert("User is created");
+                document.location.reload();
+            }
+        });
     });
     loginButton.addEventListener('click', function () {
+        var _a;
         return __awaiter(this, void 0, void 0, function* () {
             let username = entryUserName.value;
             let password = entryPassword.value;
@@ -186,8 +208,14 @@ function authenticate() {
             }
             else {
                 globaltoken = loginToken;
+                loggedUser = username;
+                document.getElementById("LoginUser").innerHTML = "Hello " + loggedUser;
                 dataLoad(loginToken);
                 signForm.style.display = "none";
+                (_a = document.getElementById("LoginUser")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
+                    alert("First log out yourself");
+                    signForm.style.display = 'none';
+                });
             }
         });
     });
@@ -203,6 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addressDetails.style.display = 'none';
         RegisterButton.style.display = 'none';
         loginButton.style.display = 'block';
+        loginValidate();
     });
     (_b = document.getElementById("RegisterUser")) === null || _b === void 0 ? void 0 : _b.addEventListener('click', function () {
         signForm.style.display = 'block';
@@ -211,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addressDetails.style.display = 'none';
         loginButton.style.display = 'none';
         RegisterButton.style.display = 'block';
+        loginValidate();
     });
 });
 entryName.addEventListener('input', function () {

@@ -35,6 +35,7 @@ let selectedContact;
 var globaltoken = "Nothing";
 var selectedData = new Person("", "", 0, 0, "", "");
 var loggedUser = "";
+//Data loading in contact list with select function
 function dataLoad(token) {
     return __awaiter(this, void 0, void 0, function* () {
         yield crudObj.extructData(token).then((objectData) => {
@@ -68,6 +69,7 @@ function dataLoad(token) {
         });
     });
 }
+//adding form generation
 function addingForm() {
     let allAddress = addresslist.children;
     for (let i = 0; i < allAddress.length; i++) {
@@ -81,6 +83,7 @@ function addingForm() {
     inputForm.style.display = 'block';
     // (document.getElementById('Formid') as any).reset(); 
 }
+//permission to add
 (_a = document.getElementById("AddAddress")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
     if (globaltoken != "Nothing") {
         addingForm();
@@ -89,6 +92,7 @@ function addingForm() {
         alert("Access Denied");
     }
 });
+//adding to database
 addButton.addEventListener('click', function () {
     if (globaltoken != "Nothing") {
         createContact();
@@ -98,14 +102,16 @@ addButton.addEventListener('click', function () {
         alert("Access Denied");
     }
 });
+//opening editing form
 document.getElementById("IconEdit").addEventListener('click', function () {
     if (globaltoken != "Nothing") {
-        editingForm(selectedData);
+        editForm(selectedData);
     }
     else {
         alert("Access Denied");
     }
 });
+//permission to edit
 saveButton.addEventListener('click', function () {
     if (globaltoken != "Nothing") {
         updateContact();
@@ -115,6 +121,7 @@ saveButton.addEventListener('click', function () {
         alert("Access Denied");
     }
 });
+//delete from database
 (_b = document.getElementById("IconDelete")) === null || _b === void 0 ? void 0 : _b.addEventListener('click', function () {
     if (globaltoken != "Nothing") {
         crudObj.deleteDetail(globaltoken, selectedContact);
@@ -127,6 +134,7 @@ saveButton.addEventListener('click', function () {
         dataLoad(globaltoken);
     }
 });
+//loging out the user
 (_c = document.getElementById("LogoutUser")) === null || _c === void 0 ? void 0 : _c.addEventListener('click', function () {
     if (globaltoken != "Nothing") {
         document.location.reload();
@@ -151,7 +159,7 @@ function createContact() {
         alert('Please fill the form properly');
     }
 }
-function editingForm(singleObjectData) {
+function editForm(singleObjectData) {
     addressDetails.style.display = 'none';
     inputForm.style.display = 'block';
     addButton.style.display = 'none';
@@ -178,6 +186,7 @@ function updateContact() {
     addressDetails.style.display = 'none';
     inputForm.style.display = 'none';
 }
+//First authenticate to use
 function authenticate() {
     RegisterButton.addEventListener('click', function () {
         return __awaiter(this, void 0, void 0, function* () {
@@ -212,10 +221,15 @@ function authenticate() {
                     alert("First log out yourself");
                     signForm.style.display = 'none';
                 });
+                //refresh the page for logging out after token expired
+                setTimeout(function () {
+                    window.location.reload();
+                }, 120000);
             }
         });
     });
 }
+//only login and registration will work when user logout
 document.addEventListener('DOMContentLoaded', () => {
     var _a, _b;
     // dataLoad()
@@ -239,6 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginValidate();
     });
 });
+//all kind of input validation
 entryName.addEventListener('input', function () {
     helperObj.nameValidate();
 });
@@ -275,6 +290,7 @@ function formValidate() {
     helperObj.validateWebsite();
     helperObj.validateAddress();
 }
+//Home content
 document.getElementById('Home').addEventListener('click', function () {
     let allAddress = addresslist.children;
     for (let i = 0; i < allAddress.length; i++) {

@@ -65,8 +65,8 @@ namespace AddressBookWebAPI.Controllers
                 return Ok(new { token = "password is incorrect" });
             }
 
-            string token = CreateToken(userlogin);
-            return Ok(new { token = token });
+            string tempToken = CreateToken(userlogin);
+            return Ok(new { token = tempToken });
         }
 
         private string CreateToken(UserRegistration user)
@@ -104,7 +104,7 @@ namespace AddressBookWebAPI.Controllers
             using(var hmac = new HMACSHA512())
             {
                 passwordKey = hmac.Key;
-                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
             }
 
         }
@@ -114,7 +114,7 @@ namespace AddressBookWebAPI.Controllers
             
             using (var hmac = new HMACSHA512(passwordKey))
             {
-                var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
                 return computedHash.SequenceEqual(passwordHash);
             }
         }

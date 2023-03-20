@@ -23,13 +23,14 @@ let entryAddress = (document.getElementById('AddressEntry') as HTMLInputElement)
 let entryUserName = (document.getElementById('UserNameEntry') as HTMLInputElement);
 let entryPassword = (document.getElementById('UserPasswordEntry') as HTMLInputElement);
 
-
 let selectedContact:any;
 
 var globaltoken = "Nothing"
 var selectedData = new Person("","",0,0,"","");
 var loggedUser = ""
 
+
+//Data loading in contact list with select function
 async function dataLoad(token:any){
      await crudObj.extructData(token).then((objectData)=>{
         let addressData = "";
@@ -71,6 +72,8 @@ async function dataLoad(token:any){
           
     });
 }
+
+//adding form generation
 function addingForm(){
     let allAddress : any = addresslist.children;
     for(let i=0;i<allAddress.length;i++)
@@ -86,6 +89,7 @@ function addingForm(){
     // (document.getElementById('Formid') as any).reset(); 
 }
 
+//permission to add
 document.getElementById("AddAddress")?.addEventListener('click',function(){
     if(globaltoken!="Nothing"){
         addingForm()
@@ -95,6 +99,7 @@ document.getElementById("AddAddress")?.addEventListener('click',function(){
     }  
 });
 
+//adding to database
 addButton.addEventListener('click',function(){
     if(globaltoken!="Nothing"){
         createContact();
@@ -105,15 +110,18 @@ addButton.addEventListener('click',function(){
     }   
 });
 
+
+//opening editing form
 (document.getElementById("IconEdit") as HTMLDivElement).addEventListener('click',function(){
     if(globaltoken!="Nothing"){
-        editingForm(selectedData)
+        editForm(selectedData)
     }  
     else{
         alert("Access Denied")
     } 
 });
 
+//permission to edit
 saveButton.addEventListener('click',function(){
     if(globaltoken!="Nothing"){
         updateContact();
@@ -124,6 +132,7 @@ saveButton.addEventListener('click',function(){
     } 
 })
 
+//delete from database
 document.getElementById("IconDelete")?.addEventListener('click',function(){
     if(globaltoken!="Nothing"){
         crudObj.deleteDetail(globaltoken,selectedContact);
@@ -138,6 +147,7 @@ document.getElementById("IconDelete")?.addEventListener('click',function(){
     
 })
 
+//loging out the user
 document.getElementById("LogoutUser")?.addEventListener('click',function(){
     if(globaltoken!="Nothing"){
         document.location.reload()
@@ -166,7 +176,7 @@ function createContact(){
     }
 }
 
-function editingForm(singleObjectData:any){
+function editForm(singleObjectData:any){
     addressDetails.style.display ='none';
     inputForm.style.display = 'block';
     addButton.style.display = 'none';
@@ -196,6 +206,7 @@ function updateContact(){
     inputForm.style.display = 'none';
 }
 
+//First authenticate to use
 function authenticate(){
     RegisterButton.addEventListener('click',async function(){
         let username = entryUserName.value;
@@ -227,12 +238,18 @@ function authenticate(){
                 alert("First log out yourself");
                 signForm.style.display='none';
             })
+
+            //refresh the page for logging out after token expired
+            setTimeout(function(){
+                window.location.reload();
+            }, 120000);
             
         }
     })
     
 }
 
+//only login and registration will work when user logout
 document.addEventListener('DOMContentLoaded', () => {
     // dataLoad()
     authenticate();
@@ -261,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
+//all kind of input validation
 entryName.addEventListener('input',function(){
     helperObj.nameValidate();
 });
@@ -302,7 +319,7 @@ function formValidate(){
 }
 
 
-
+//Home content
 (document.getElementById('Home') as HTMLElement).addEventListener('click',function(){
     let allAddress : any = addresslist.children;
     for(let i=0;i<allAddress.length;i++)

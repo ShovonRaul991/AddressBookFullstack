@@ -1,10 +1,7 @@
 ﻿using AddressBookWebAPI.Model;
-using Dapper;
-using Microsoft.AspNetCore.Http;
+using AddressBookWebAPI.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using System.Data.SqlClient;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -17,9 +14,11 @@ namespace AddressBookWebAPI.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        public AuthenticationController(IConfiguration configuration) 
+        private readonly ILoginServices _loginServices;
+        public AuthenticationController(IConfiguration configuration,ILoginServices loginServices) 
         {
             _configuration = configuration;
+            _loginServices = loginServices;
         }
 
 
@@ -27,9 +26,7 @@ namespace AddressBookWebAPI.Controllers
         [HttpPost("register")]
         public async Task<ActionResult> Register(UserRegistration _userRegistration)
         {
-            var checkAvailable = @"Select username from Users Where username = @User";
-            using var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
-            var searchUser = await connection.QueryAsync<User>(checkAvailable, new {User = _userRegistration.username});
+            var searchUser = await _loginServices.GetUserDetails(_userRegistration.username);
             if (searchUser.Count() != 0)
             {
                 return Ok(new { message = "user already present" });
@@ -41,20 +38,16 @@ namespace AddressBookWebAPI.Controllers
             user.passwordHash = passwordHash;
             user.passwordKey = passwordKey;
 
-            var insertAddress = @"Insert into Users (username, passwordHash, passwordKey) values (@username, @passwordHash, @passwordKey)";
-            //using var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
-            var addresult = await connection.QueryAsync<User>(insertAddress, user);
-            return Ok(new { message = User });
+            _loginServices.RegisterUser(user);
+            return Ok(new { message = user });
 
         }
 
         [HttpPost("login")]
         public async Task<ActionResult> Login(UserRegistration userlogin)
         {
-            
-            var getParticularUser = @"Select * from Users Where username = @UserName";
-            using var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
-            var totalData = await connection.QueryAsync<User>(getParticularUser, new { UserName = userlogin.username });
+
+            var totalData = await _loginServices.LogUser(userlogin);
             if (totalData.Count()==0)
             {
                 return Ok(new { token = "user not found" });

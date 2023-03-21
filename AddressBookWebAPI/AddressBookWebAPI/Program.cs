@@ -61,6 +61,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddSingleton<IAddressServices,AddressServices>();
 builder.Services.AddSingleton<IAddressRepository,AddressRepository>();
+builder.Services.AddSingleton<ILoginRepository,LoginRepository>();
+builder.Services.AddSingleton<ILoginServices, LoginServices>();
 
 var app = builder.Build();
 

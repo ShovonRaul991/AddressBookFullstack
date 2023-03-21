@@ -81,6 +81,7 @@ function addingForm(){
             allAddress[i].style.backgroundColor = 'white';
         }
     (document.getElementById('Formid') as any).reset(); 
+    
     addressDetails.style.display = 'none';  
     signForm.style.display = 'none';
     addButton.style.display= 'block';
@@ -92,7 +93,9 @@ function addingForm(){
 //permission to add
 document.getElementById("AddAddress")?.addEventListener('click',function(){
     if(globaltoken!="Nothing"){
-        addingForm()
+        addingForm();
+        
+        //(document.getElementById('Formid') as any).reset();
     }
     else{
         alert("Access Denied")
@@ -234,6 +237,7 @@ function authenticate(){
             (document.getElementById("LoginUser") as HTMLElement).innerHTML = "Hello "+ loggedUser;
             dataLoad(loginToken);
             signForm.style.display = "none";
+            //(document.getElementById("LogOut") as HTMLElement).style.display = 'block'
             document.getElementById("LoginUser")?.addEventListener('click',function(){
                 alert("First log out yourself");
                 signForm.style.display='none';

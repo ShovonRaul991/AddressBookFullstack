@@ -87,6 +87,7 @@ function addingForm() {
 (_a = document.getElementById("AddAddress")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
     if (globaltoken != "Nothing") {
         addingForm();
+        //(document.getElementById('Formid') as any).reset();
     }
     else {
         alert("Access Denied");
@@ -217,6 +218,7 @@ function authenticate() {
                 document.getElementById("LoginUser").innerHTML = "Hello " + loggedUser;
                 dataLoad(loginToken);
                 signForm.style.display = "none";
+                //(document.getElementById("LogOut") as HTMLElement).style.display = 'block'
                 (_a = document.getElementById("LoginUser")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
                     alert("First log out yourself");
                     signForm.style.display = 'none';

@@ -1,4 +1,6 @@
 
+using AddressBookWebAPI.Repository;
+using AddressBookWebAPI.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -15,6 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//builder.Services.AddTransient<IGetAllAddress, GetAllAddress>();
 
 //for accessing API Outside
 var myAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -55,6 +58,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
         
     });
+
+builder.Services.AddSingleton<IAddressServices,AddressServices>();
+builder.Services.AddSingleton<IAddressRepository,AddressRepository>();
 
 var app = builder.Build();
 

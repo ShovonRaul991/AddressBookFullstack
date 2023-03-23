@@ -237,9 +237,10 @@ function authenticate(){
             (document.getElementById("LoginUser") as HTMLElement).innerHTML = "Hello "+ loggedUser;
             dataLoad(loginToken);
             signForm.style.display = "none";
-            //(document.getElementById("LogOut") as HTMLElement).style.display = 'block'
+            (document.getElementById("LogOut") as HTMLElement).style.display ='block'
+           
             document.getElementById("LoginUser")?.addEventListener('click',function(){
-                alert("First log out yourself");
+                alert("User Already logged in");
                 signForm.style.display='none';
             })
 

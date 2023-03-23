@@ -218,9 +218,9 @@ function authenticate() {
                 document.getElementById("LoginUser").innerHTML = "Hello " + loggedUser;
                 dataLoad(loginToken);
                 signForm.style.display = "none";
-                //(document.getElementById("LogOut") as HTMLElement).style.display = 'block'
+                document.getElementById("LogOut").style.display = 'block';
                 (_a = document.getElementById("LoginUser")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
-                    alert("First log out yourself");
+                    alert("User Already logged in");
                     signForm.style.display = 'none';
                 });
                 //refresh the page for logging out after token expired
